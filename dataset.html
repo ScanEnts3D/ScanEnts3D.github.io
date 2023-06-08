@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description"
+         content="ScanEnts3D: Exploiting Phrase-to-3D-Object Correspondences for Improved Visio-Linguistic Models in 3D Scenes">
+      <meta name="keywords"
+         content="ScanEnts3D, Dataset, 3D Visual Grounding, 3D Dense Captioning, Referit3D, ScanRefer, ScanEnts3D: Exploiting Phrase-to-3D-Object Correspondences for Improved Visio-Linguistic Models in 3D Scenes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ScanEnts3D: Exploiting Phrase-to-3D-Object Correspondences for Improved Visio-Linguistic Models in 3D Scenes
+      </title>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+             dataLayer.push(arguments);
+         }
+         
+         gtag('js', new Date());
+         
+         gtag('config', 'G-PYVRSFMDRL');
+      </script>
+      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="./static/css/bulma.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+      <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      <link rel="stylesheet" href="./static/css/index.css">
+      <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script defer src="./static/js/fontawesome.all.min.js"></script>
+      <script src="./static/js/bulma-carousel.min.js"></script>
+      <script src="./static/js/bulma-slider.min.js"></script>
+      <!-- <script src="./static/js/index.js"></script> -->
+      <script>
+         document.addEventListener("DOMContentLoaded", function (event) {
+             //do work
+         
+             const copyButtonLabel = "Copy BibTex";
+         
+             // use a class selector if available
+             let blocks = document.querySelectorAll("pre");
+             console.log(blocks)
+         
+             blocks.forEach((block) => {
+                 // only add button if browser supports Clipboard API
+                 if (navigator.clipboard) {
+                     let button = document.createElement("button");
+         
+                     button.innerText = copyButtonLabel;
+                     button.classList.add("btn");
+                     button.classList.add("btn-primary");
+                     button.style.alignContent = "center";
+                     button.style.textAlign = "center";
+                     block.parentElement.appendChild(button);
+         
+                     button.addEventListener("click", async () => {
+                         await copyCode(block, button);
+                     });
+                 }
+             });
+         
+             async function copyCode(block, button) {
+                 let code = block.querySelector("code");
+                 let text = code.innerText;
+         
+                 await navigator.clipboard.writeText(text);
+         
+                 // visual feedback that task is completed
+                 button.innerText = "BibTex Copied!";
+         
+                 setTimeout(() => {
+                     button.innerText = copyButtonLabel;
+                 }, 1000);
+             }
+         });
+      </script>
+      <style>
+        p { color: red; }
+        code { background-color: #eee; }
+
+         pre[class*="language-"] {
+         position: relative;
+         overflow: auto;
+         /* make space  */
+         margin: 5px 0;
+         padding: 1.75rem 0 1.75rem 1rem;
+         border-radius: 10px;
+         }
+         pre[class*="language-"] button {
+         position: absolute;
+         top: 5px;
+         right: 5px;
+         font-size: 0.9rem;
+         padding: 0.15rem;
+         border: ridge 1px;
+         border-radius: 5px;
+         text-shadow: #c4c4c4 0 0 2px;
+         }
+         pre[class*="language-"] button:hover {
+         cursor: pointer;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+         <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+         </div>
+      </nav>
+      <section class="hero">
+         <div class="hero-body">
+            <div class="container is-max-desktop">
+               <div class="columns is-centered">
+                  <div class="column has-text-centered">
+                     <h1 class="title is-1 publication-title">ScanEnts3D Dataset</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+
+      <section class="section" id="dataset-download">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+           <!-- Visual Effects. -->
+           <div class="column">
+              <div class="content" style="text-align:center;">
+                 <h2 class="title is-3 has-text-centered">🌎 Dataset Download</h2>
+                 <p style="text-align:center;">
+                    <a href="/ScanEnts3D_Nr3D.csv" download>Nr3D-ScanEnts3D</a>
+                    <!-- Coming soon! If you are interested, please <a href="https://forms.gle/fR3eMbJs4AKNiyz67">fill out this form</a> and you will recieve a notification 🔔 once our dataset is out! -->
+                 </p>
+                 <p style="text-align:center;">
+                    <a href="/ScanEnts3D_ScanRefer.zip" download>ScanRefer-ScanEnts3D</a>
+                    <!-- Coming soon! If you are interested, please <a href="https://forms.gle/fR3eMbJs4AKNiyz67">fill out this form</a> and you will recieve a notification 🔔 once our dataset is out! -->
+                 </p>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+      <section class="section" id="dataset-download">
+         <div class="container is-max-desktop">
+         <div class="columns is-centered">
+            <!-- Visual Effects. -->
+            <div class="column">
+               <div class="content" style="text-align:left;">
+                  <h2 class="title is-3 has-text-left">Format</h2>
+                  Our annotations are provided for each utterance in Nr3D and ScanRefer as an array of entities,
+                  where entity represents a correspondence between a noun phrase (provided as token indicies) and its 3D
+                  objects (provided as 3D object-ids) in a 3D scene.  We are using the official tokens provided by Referit3D Nr3D and ScanRefer datasets.
+                  
+                  <br>
+                  <br>
+                  Here is an example for ScanRefer :
+                  <br>
+                  <br>
+                  <p class="language-css" style="color: black;  background-color: #eee;">
+                     <code style="color: black;  background-color: #eee;">
+                     {           
+                     <br>
+                     &nbsp;"scene_id": "scene0000_00",
+                     <br>
+                     &nbsp;"object_id": "45",
+                     <br>
+                     &nbsp;"object_name": "toaster_oven",
+                     <br>
+                     &nbsp;"ann_id": "3",
+                     <br>
+                     &nbsp;"description": "there is a silver  bread toaster. placed next to the fridge.",
+                     <br>
+                     &nbsp;"token":[ "there", "is", "a", "silver", "bread", "toaster",".", "placed", "next", "to", "the","fridge","."],
+                     <br>
+                    </code>
+                    <code style="color: green;  background-color: #eee;">
+                    &nbsp;"entities": [
+                     <br>
+                     &nbsp;&nbsp;&nbsp;[ # First entity
+                     <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4, 5], # 0-indexed token indicies 
+                     <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;["45_toaster_oven"] # Array of object-id and object label
+                     <br>
+                     &nbsp;&nbsp;&nbsp;],
+                     <br>
+                     &nbsp;&nbsp;&nbsp;[ # Second entity
+                     <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[11],
+                     <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;["33_refrigerator"]
+                     <br>
+                     &nbsp;&nbsp;&nbsp;]]
+                    </code>
+                     <code style="color: black;  background-color: #eee;">
+                     <br>
+}
+                     <br>
+                     </code>
+                  </p>
+                  <br>
+                  For Nr3D, we provide the entities as a column in the provided csv file.
+                 
+               </div>
+            </div>
+         </div>
+      </section>
+     
+   </body>
+</html>
